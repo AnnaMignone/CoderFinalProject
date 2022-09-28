@@ -1,0 +1,570 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TIPOGRAFÍA FAMILIA: font-family: 'Montserrat', sans-serif; */
+/* Colores en HEX
+Blanco: FCFCFC
+Negro: OD131A
+Rojo: D73E47
+Verde oscuro: 819000
+Verde claro: 96A13A 
+
+Tamaño fonts: 
+letra normal: 1 rem 
+Títulos: 2 rem
+Subtítulos: 1.5 rem
+Italia título principal: 3 rem*/
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #0d131a;
+}
+
+.selected {
+  color: #819000 !important;
+  font-weight: bold;
+}
+
+/* DESKTOP */
+
+/* nav bar */
+
+header {
+  background-color: #fcfcfc;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  width: 50%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #0d131a;
+}
+
+.split {
+  background-color: #96a13a;
+  height: 10px;
+  width: 100%;
+}
+
+header .split br {
+  background-color: transparent;
+}
+
+/* portadas */
+
+.portada__home {
+  background-image: url(../assets/sliderInicio/slide1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada__destinos {
+  background-image: url(../assets/portadas/destinos.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada__quehacer {
+  background-image: url(../assets/portadas/quehacer.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada__blog {
+  background-image: url(../assets/portadas/blog.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada__suscribite {
+  background-image: url(../assets/portadas/suscribite.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada__info {
+  background-color: #fcfcfc80;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.portada__info h1 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #0d131a;
+}
+
+.portada__info h2 {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #0d131a;
+}
+
+/* intro - texto */
+
+.text {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.text__p {
+  width: 90%;
+  text-align: justify;
+  font-size: 1rem;
+  color: #0d131a;
+}
+
+/* titulos y subtitulos  */
+
+.titulos {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-top: 80px;
+}
+.titulos__titulos {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #819000;
+}
+
+.titulos__subtitulos {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  color: #819000;
+}
+
+/* cards- Destinos */
+
+.container {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container__card {
+  border: solid 0.1px black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  width: 25%;
+}
+
+.container__card__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.container__card__info {
+  padding: 5px 10px 10px 10px;
+  text-align: left;
+  max-height: 40%;
+}
+
+.container__card__info__titulo {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0d131a;
+}
+
+.container__card__info__texto {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #0d131a;
+}
+
+/* Botones */
+
+.button {
+  border: 0.5px solid #819000;
+  background-color: #819000;
+  color: #fcfcfc;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.button a {
+  color: #fcfcfc;
+}
+
+/* Cards (que hacer) */
+
+.box {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box__card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  width: 25%;
+}
+
+.box__card__img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.box__card__info {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 2px;
+  text-align: left;
+  max-height: 30%;
+  font-size: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.box__card__info__titulo {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0d131a;
+}
+
+.box__card__info__texto {
+  font-size: 1rem;
+  color: #0d131a;
+}
+
+/* Cards (blog) */
+
+.cont {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+}
+
+.cont__card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 30px;
+  width: 30%;
+}
+
+.cont__card__img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.cont__card__info {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 2px;
+  text-align: left;
+  max-height: 30%;
+}
+
+.cont__card__info__titulo {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0d131a;
+}
+
+.cont__card__info__date {
+  font-weight: 100;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #0d131a;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #96a13a;
+  color: #fcfcfc;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+}
+
+footer .info {
+  margin: 20px;
+  width: 30%;
+  padding: 15px;
+}
+
+footer .info__text {
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+footer ul li {
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+footer .contact {
+  margin: 20px;
+  width: 30%;
+  padding: 15px;
+}
+
+footer .contact__text {
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+footer .social {
+  margin: 20px;
+  width: 30%;
+  padding: 15px;
+}
+
+footer .social__text {
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* mapa italia (Destinos) */
+
+.mapait {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35vw;
+}
+
+.mapait__img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35vw;
+}
+
+/* Formulario */
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+}
+
+.form__tittle {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #819000;
+}
+
+.form__box {
+  border: 0.5px solid #0d131a;
+  border-radius: 3px;
+  border-width: 0.5px;
+  width: 60vw;
+  height: 2rem;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form__check {
+  margin-top: 40px;
+  margin-right: 5px;
+}
+
+.form__check__text {
+  color: #0d131a;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.paginador {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.paginador p {
+  margin: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  /* nav bar */
+
+  header {
+    background-color: #fcfcfc;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav {
+    width: 50%;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #0d131a;
+  }
+
+  .split {
+    background-color: #96a13a;
+    height: 10px;
+    width: 100%;
+  }
+
+  header .split br {
+    background-color: transparent;
+  }
+
+  /* portadas */
+
+  .portada__home {
+    background-image: url(../assets/sliderInicio/slide1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
