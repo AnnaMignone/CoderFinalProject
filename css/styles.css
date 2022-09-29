@@ -204,28 +204,18 @@ header .split br {
 /* cards- Destinos */
 
 .container {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 25px;
+  margin: 50px 100px 25px 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .container__card {
-  border: solid 0.1px black;
   border-radius: 10px;
   overflow: hidden;
   margin: 20px;
-  width: 25%;
+  width: 90%;
+  box-shadow: 0px 3px 5px #0d131a4f;
 }
 
 .container__card__img {
@@ -270,6 +260,7 @@ header .split br {
   width: fit-content;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  box-shadow: 0px 3px 5px #0d131a5d;
 }
 
 .button a {
@@ -283,13 +274,6 @@ header .split br {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 25px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
 
   display: flex;
   flex-wrap: wrap;
@@ -301,12 +285,15 @@ header .split br {
   overflow: hidden;
   margin: 20px;
   width: 25%;
+  padding-bottom: 5px;
 }
 
 .box__card__img {
   width: 100%;
   height: 70%;
+  border-radius: 10px;
   object-fit: cover;
+  box-shadow: 0px 3px 5px #0d131a5d;
 }
 
 .box__card__info {
@@ -341,13 +328,6 @@ header .split br {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 25px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-
   display: flex;
   flex-wrap: row wrap;
   justify-content: center;
@@ -364,6 +344,7 @@ header .split br {
   width: 100%;
   height: 70%;
   object-fit: cover;
+  box-shadow: 0px 3px 5px #0d131a5d;
 }
 
 .cont__card__info {
@@ -395,17 +376,19 @@ header .split br {
 
 footer {
   width: 100%;
-  height: 30vh;
+  height: auto;
   background-color: #96a13a;
   color: #fcfcfc;
-  display: flex;
-  flex-wrap: row wrap;
-  justify-content: center;
+
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-items: center;
+  align-items: baseline;
+  justify-content: space-around;
 }
 
 footer .info {
   margin: 20px;
-  width: 30%;
   padding: 15px;
 }
 
@@ -414,6 +397,8 @@ footer .info__text {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 footer ul li {
@@ -423,22 +408,8 @@ footer ul li {
   font-size: 0.8rem;
 }
 
-footer .contact {
-  margin: 20px;
-  width: 30%;
-  padding: 15px;
-}
-
-footer .contact__text {
-  font-weight: 900;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
 footer .social {
   margin: 20px;
-  width: 30%;
   padding: 15px;
 }
 
@@ -447,6 +418,8 @@ footer .social__text {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 /* mapa italia (Destinos) */
@@ -506,6 +479,11 @@ footer .social__text {
   font-weight: 400;
 }
 
+input[type="checkbox"] {
+  accent-color: #96a13a;
+}
+/* Extras */
+
 .paginador {
   display: flex;
   justify-content: center;
@@ -519,52 +497,104 @@ footer .social__text {
 /* MOBILE */
 
 @media (max-width: 600px) {
-  /* nav bar */
-
   header {
-    background-color: #fcfcfc;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px;
   }
 
   header nav {
-    width: 50%;
+    width: 75%;
   }
 
   header ul {
-    display: flex;
-    justify-content: space-around;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    color: #0d131a;
+    justify-content: right;
+    font-size: small;
   }
 
-  .split {
-    background-color: #96a13a;
-    height: 10px;
-    width: 100%;
+  header li {
+    margin: 5px;
+    text-align: center;
   }
-
-  header .split br {
-    background-color: transparent;
-  }
-
-  /* portadas */
 
   .portada__home {
-    background-image: url(../assets/sliderInicio/slide1.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 75vh;
-    background-attachment: fixed;
+    height: 55vh;
+  }
 
+  .portada__destinos {
+    height: 55vh;
+  }
+
+  .portada__quehacer {
+    height: 55vh;
+  }
+
+  .portada__blog {
+    height: 55vh;
+  }
+
+  .portada__suscribite {
+    height: 55vh;
+  }
+
+  .portada__info h1 {
+    font-size: 2.5rem;
+  }
+
+  .portada__info h2 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    margin: 50px 0px 25px 0px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    overflow: auto;
+  }
+
+  .container__card {
+    margin: 10px;
+    min-width: 250px;
+  }
+
+  .box {
+    margin: 50px 0px 25px 0px;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+
+  .box__card {
+    margin: 10px;
+    min-width: 250px;
+    padding-bottom: 10px;
+  }
+
+  .cont {
+    margin: 50px 50px 25px 50px;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .cont__card {
+    border-radius: 10px;
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cont__card__info {
+    padding: 5px 10px 10px 2px;
+  }
+
+  .cont__card__info__titulo {
+    font-size: 1.2rem;
+  }
+
+  .cont__card__info__date {
+    font-size: 0.8rem;
   }
 }
