@@ -437,6 +437,10 @@ footer .social__text {
   text-align: left;
 }
 
+.social__icons i {
+  margin: 5px;
+}
+
 /* mapa italia (Destinos) */
 
 .mapait {
@@ -613,5 +617,14 @@ input[type="checkbox"] {
 
   .cont__card__info__date {
     font-size: 0.8rem;
+  }
+
+  .mapait {
+    margin: 0 50px;
+  }
+
+  .mapait__img {
+    margin: 0px;
+    width: 70vw;
   }
 }
