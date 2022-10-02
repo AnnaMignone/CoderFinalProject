@@ -165,10 +165,7 @@ header .split br {
 .text {
   display: flex;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin: 60px 40px 60px 40px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
@@ -184,10 +181,7 @@ header .split br {
 
 .titulos {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  margin-top: 80px;
+  margin: 80px auto 60px auto;
 }
 .titulos__titulos {
   font-size: 2rem;
@@ -258,10 +252,7 @@ header .split br {
   color: #fcfcfc;
   border-radius: 10px;
   padding: 10px 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin: 20px auto 60px auto;
   width: fit-content;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -283,10 +274,7 @@ header .split br {
 /* Cards (que hacer) */
 
 .box {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 25px;
+  margin: 50px 50px 25px 50px;
 
   display: flex;
   flex-wrap: wrap;
@@ -311,11 +299,7 @@ header .split br {
 }
 
 .box__card__info {
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 2px;
-  /* text-align: left; */
+  padding: 5px 10px 10px 2px;
   height: 30%;
   font-size: 0.5rem;
   font-family: "Montserrat", sans-serif;
@@ -338,10 +322,7 @@ header .split br {
 /* Cards (blog) */
 
 .cont {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 25px;
+  margin: 50px 50px 25px 50px;
   display: flex;
   flex-wrap: row wrap;
   justify-content: center;
@@ -363,10 +344,7 @@ header .split br {
 }
 
 .cont__card__info {
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 2px;
+  padding: 5px 10px 10px 2px;
   text-align: left;
   max-height: 30%;
 }
@@ -478,10 +456,7 @@ footer .social__text {
   border-width: 0.5px;
   width: 60vw;
   height: 2rem;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 1px 10px 1px 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -537,26 +512,31 @@ input[type="checkbox"] {
   .portada__home {
     height: 55vh;
     background-size: cover;
+    background-attachment: scroll;
   }
 
   .portada__destinos {
     height: 55vh;
     background-size: cover;
+    background-attachment: scroll;
   }
 
   .portada__quehacer {
     height: 55vh;
     background-size: cover;
+    background-attachment: scroll;
   }
 
   .portada__blog {
     height: 55vh;
     background-size: cover;
+    background-attachment: scroll;
   }
 
   .portada__suscribite {
     height: 55vh;
     background-size: cover;
+    background-attachment: scroll;
   }
 
   .portada__info h1 {
