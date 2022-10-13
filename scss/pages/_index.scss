@@ -1,0 +1,11 @@
+.portada__home {
+  background-image: url(../assets/sliderInicio/slide1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

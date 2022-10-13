@@ -1,0 +1,21 @@
+.titulos {
+  text-align: center;
+  margin: 80px auto 60px auto;
+
+  &__titulos {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #819000;
+  }
+
+  &__subtitulos {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 80px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    color: #819000;
+  }
+}

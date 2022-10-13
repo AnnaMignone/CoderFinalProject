@@ -4,20 +4,6 @@
   box-sizing: border-box;
 }
 
-/* TIPOGRAFÍA FAMILIA: font-family: 'Montserrat', sans-serif; */
-/* Colores en HEX
-Blanco: FCFCFC
-Negro: OD131A
-Rojo: D73E47
-Verde oscuro: 819000
-Verde claro: 96A13A 
-
-Tamaño fonts: 
-letra normal: 1 rem 
-Títulos: 2 rem
-Subtítulos: 1.5 rem
-Italia título principal: 3 rem*/
-
 ul {
   list-style: none;
 }
@@ -26,7 +12,6 @@ a {
   text-decoration: none;
   color: #0d131a;
 }
-
 a:visited {
   text-decoration: none;
   color: #0d131a;
@@ -37,9 +22,19 @@ a:visited {
   font-weight: bold;
 }
 
-/* DESKTOP */
-
-/* nav bar */
+.text {
+  display: flex;
+  justify-content: center;
+  margin: 60px 40px 60px 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.text p {
+  width: 90%;
+  text-align: justify;
+  font-size: 1rem;
+  color: #0d131a;
+}
 
 header {
   background-color: #fcfcfc;
@@ -50,11 +45,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 header nav {
   width: 50%;
 }
-
 header ul {
   display: flex;
   justify-content: space-around;
@@ -62,9 +55,11 @@ header ul {
   font-weight: 400;
   color: #0d131a;
 }
-
 header ul li:hover {
   font-weight: 600;
+}
+header .split br {
+  background-color: transparent;
 }
 
 .split {
@@ -73,111 +68,88 @@ header ul li:hover {
   width: 100%;
 }
 
-header .split br {
-  background-color: transparent;
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #96a13a;
+  color: #fcfcfc;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-items: center;
+  align-items: baseline;
+  justify-content: space-around;
 }
-
-/* portadas */
-
-.portada__home {
-  background-image: url(../assets/sliderInicio/slide1.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 75vh;
-  background-attachment: fixed;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portada__destinos {
-  background-image: url(../assets/portadas/destinos.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 75vh;
-  background-attachment: fixed;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portada__quehacer {
-  background-image: url(../assets/portadas/quehacer.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 75vh;
-  background-attachment: fixed;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portada__blog {
-  background-image: url(../assets/portadas/blog.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 75vh;
-  background-attachment: fixed;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portada__suscribite {
-  background-image: url(../assets/portadas/suscribite.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 75vh;
-  background-attachment: fixed;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portada__info {
-  background-color: #fcfcfc80;
-  text-align: center;
+footer .info {
+  margin: 20px;
   padding: 15px;
-  border-radius: 10px;
 }
-
-.portada__info h1 {
-  font-size: 3rem;
+footer .info__text {
+  font-weight: 900;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #0d131a;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: left;
 }
-
-.portada__info h2 {
-  font-size: 1.5rem;
+footer ul li {
+  margin: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #0d131a;
+  font-size: 0.8rem;
+}
+footer .social {
+  margin: 20px;
+  padding: 15px;
+}
+footer .social__text {
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: left;
+}
+footer .social__icons {
+  margin: 5px;
 }
 
-/* intro - texto */
-
-.text {
+.form {
   display: flex;
   justify-content: center;
-  margin: 60px 40px 60px 40px;
+  margin: 80px;
+}
+.form__tittle {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #819000;
+}
+.form__box {
+  border: 0.5px solid #0d131a;
+  border-radius: 3px;
+  border-width: 0.5px;
+  width: 60vw;
+  height: 2rem;
+  padding: 1px 10px 1px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.form__check {
+  margin-top: 40px;
+  margin-right: 5px;
+}
+.form__check__text {
+  color: #0d131a;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
-.text__p {
-  width: 90%;
-  text-align: justify;
-  font-size: 1rem;
-  color: #0d131a;
+input[type="checkbox"] {
+  accent-color: #96a13a;
 }
-
-/* titulos y subtitulos  */
 
 .titulos {
   text-align: center;
@@ -190,7 +162,6 @@ header .split br {
   font-weight: 700;
   color: #819000;
 }
-
 .titulos__subtitulos {
   font-size: 1.5rem;
   font-weight: 100;
@@ -199,52 +170,6 @@ header .split br {
   font-weight: 200;
   color: #819000;
 }
-
-/* cards- Destinos */
-
-.container {
-  margin: 50px 100px 25px 100px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.container__card {
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 20px;
-  width: 90%;
-  box-shadow: 0px 3px 5px #0d131a4f;
-}
-
-.container__card__img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.container__card__info {
-  padding: 5px 10px 10px 10px;
-  text-align: left;
-  max-height: 40%;
-}
-
-.container__card__info__titulo {
-  margin-bottom: 5px;
-  font-size: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  color: #0d131a;
-}
-
-.container__card__info__texto {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #0d131a;
-}
-
-/* Botones */
 
 .button {
   border: 0.5px solid #819000;
@@ -256,31 +181,133 @@ header .split br {
   width: fit-content;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  box-shadow: 0px 3px 5px #0d131a5d;
+  box-shadow: 0px 3px 5px rgba(13, 19, 26, 0.3647058824);
 }
-
 .button a {
   color: #fcfcfc;
 }
-
 .button:hover {
   background-color: #96a13a;
 }
-
 .button:active {
   transform: translateY(2px);
 }
 
-/* Cards (que hacer) */
+.paginador {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.paginador p {
+  margin: 5px;
+}
+
+.portada__info {
+  background-color: rgba(252, 252, 252, 0.5019607843);
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+.portada__info h1 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #0d131a;
+}
+.portada__info h2 {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #0d131a;
+}
+
+.portada__home {
+  background-image: url(../assets/sliderInicio/slide1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portada__destinos {
+  background-image: url(../assets/portadas/destinos.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 50px 100px 25px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.container__card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  width: 90%;
+  box-shadow: 0px 3px 5px rgba(13, 19, 26, 0.3098039216);
+}
+.container__card__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.container__card__info {
+  padding: 5px 10px 10px 10px;
+  text-align: left;
+  max-height: 40%;
+}
+.container__card__info__titulo {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0d131a;
+}
+.container__card__info__texto {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #0d131a;
+}
+
+.mapait {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35vw;
+}
+.mapait__img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 35vw;
+}
+
+.portada__quehacer {
+  background-image: url(../assets/portadas/quehacer.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .box {
   margin: 50px 50px 25px 50px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .box__card {
   border-radius: 10px;
   overflow: hidden;
@@ -289,15 +316,13 @@ header .split br {
   height: 50vh;
   padding-bottom: 5px;
 }
-
 .box__card__img {
   width: 100%;
   height: 70%;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0px 3px 5px #0d131a5d;
+  box-shadow: 0px 3px 5px rgba(13, 19, 26, 0.3647058824);
 }
-
 .box__card__info {
   padding: 5px 10px 10px 2px;
   height: 30%;
@@ -305,7 +330,6 @@ header .split br {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-
 .box__card__info__titulo {
   margin-bottom: 5px;
   font-size: 1.5rem;
@@ -313,13 +337,21 @@ header .split br {
   font-weight: 600;
   color: #0d131a;
 }
-
 .box__card__info__texto {
   font-size: 1rem;
   color: #0d131a;
 }
 
-/* Cards (blog) */
+.portada__blog {
+  background-image: url(../assets/portadas/blog.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .cont {
   margin: 50px 50px 25px 50px;
@@ -327,7 +359,6 @@ header .split br {
   flex-wrap: row wrap;
   justify-content: center;
 }
-
 .cont__card {
   border-radius: 10px;
   overflow: hidden;
@@ -335,20 +366,17 @@ header .split br {
   width: 30%;
   height: 50vh;
 }
-
 .cont__card__img {
   width: 100%;
   height: 70%;
   object-fit: cover;
-  box-shadow: 0px 3px 5px #0d131a5d;
+  box-shadow: 0px 3px 5px rgba(13, 19, 26, 0.3647058824);
 }
-
 .cont__card__info {
   padding: 5px 10px 10px 2px;
   text-align: left;
   max-height: 30%;
 }
-
 .cont__card__info__titulo {
   margin-bottom: 5px;
   font-size: 1.5rem;
@@ -356,7 +384,6 @@ header .split br {
   font-weight: 600;
   color: #0d131a;
 }
-
 .cont__card__info__date {
   font-weight: 100;
   font-size: 0.8rem;
@@ -365,251 +392,15 @@ header .split br {
   color: #0d131a;
 }
 
-/* footer */
-
-footer {
-  width: 100%;
-  height: auto;
-  background-color: #96a13a;
-  color: #fcfcfc;
-
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  justify-items: center;
-  align-items: baseline;
-  justify-content: space-around;
-}
-
-footer .info {
-  margin: 20px;
-  padding: 15px;
-}
-
-footer .info__text {
-  font-weight: 900;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-footer ul li {
-  margin: 5px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 0.8rem;
-}
-
-footer .social {
-  margin: 20px;
-  padding: 15px;
-}
-
-footer .social__text {
-  font-weight: 900;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.social__icons i {
-  margin: 5px;
-}
-
-/* mapa italia (Destinos) */
-
-.mapait {
-  margin-left: auto;
-  margin-right: auto;
-  width: 35vw;
-}
-
-.mapait__img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 35vw;
-}
-
-/* Formulario */
-
-.form {
+.portada__suscribite {
+  background-image: url(../assets/portadas/suscribite.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
-  margin: 80px;
+  align-items: center;
 }
 
-.form__tittle {
-  text-align: right;
-  font-size: 1rem;
-  font-weight: 800;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #819000;
-}
-
-.form__box {
-  border: 0.5px solid #0d131a;
-  border-radius: 3px;
-  border-width: 0.5px;
-  width: 60vw;
-  height: 2rem;
-  padding: 1px 10px 1px 10px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.form__check {
-  margin-top: 40px;
-  margin-right: 5px;
-}
-
-.form__check__text {
-  color: #0d131a;
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-
-input[type="checkbox"] {
-  accent-color: #96a13a;
-}
-/* Extras */
-
-.paginador {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-
-.paginador p {
-  margin: 5px;
-}
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-  header {
-    padding: 10px;
-  }
-
-  header nav {
-    width: 75%;
-  }
-
-  header ul {
-    justify-content: right;
-    font-size: small;
-  }
-
-  header li {
-    margin: 5px;
-    text-align: center;
-  }
-
-  .portada__home {
-    height: 55vh;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  .portada__destinos {
-    height: 55vh;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  .portada__quehacer {
-    height: 55vh;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  .portada__blog {
-    height: 55vh;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  .portada__suscribite {
-    height: 55vh;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-
-  .portada__info h1 {
-    font-size: 2.5rem;
-  }
-
-  .portada__info h2 {
-    font-size: 1.2rem;
-  }
-
-  .container {
-    margin: 50px 0px 25px 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-  }
-
-  .container__card {
-    margin: 10px;
-    min-width: 250px;
-  }
-
-  .box {
-    margin: 50px 0px 25px 0px;
-    width: 100%;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-    flex-wrap: nowrap;
-    justify-content: start;
-  }
-
-  .box__card {
-    margin: 10px;
-    min-width: 75vw;
-    padding-bottom: 10px;
-    height: 35vh;
-  }
-
-  .cont {
-    margin: 0 50px;
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .cont__card {
-    border-radius: 10px;
-    margin: 0px;
-    width: 100%;
-    margin-bottom: 30px;
-    height: 30vh;
-  }
-
-  .cont__card__info {
-    padding: 5px 10px 10px 2px;
-  }
-
-  .cont__card__info__titulo {
-    font-size: 1.3rem;
-  }
-
-  .cont__card__info__date {
-    font-size: 0.8rem;
-  }
-
-  .mapait {
-    margin: 0 50px;
-  }
-
-  .mapait__img {
-    margin: 0px;
-    width: 70vw;
-  }
-}
+/*# sourceMappingURL=styles.css.map */

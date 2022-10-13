@@ -1,0 +1,35 @@
+header {
+  background-color: #fcfcfc;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    width: 50%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #0d131a;
+
+    li:hover {
+      font-weight: 600;
+    }
+  }
+
+  .split br {
+    background-color: transparent;
+  }
+}
+
+.split {
+  background-color: #96a13a;
+  height: 10px;
+  width: 100%;
+}
