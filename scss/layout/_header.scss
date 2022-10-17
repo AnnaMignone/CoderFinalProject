@@ -7,23 +7,13 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  a {
-    width: 50%;
-    .logo {
-      background-image: url(../../assets/logo/logodesktop.png);
-      background-position: center;
-      background-size: cover;
-      height: 30px;
-      width: 36%;
-    }
-  }
-
-  .logo {
-    background-image: url(../../assets/logo/logodesktop.png);
+  div {
+    height: 45px;
+    width: 260px;
+    background-image: url(/assets/logo/logodesktop.png);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 30px;
-    width: 18%;
+    background-size: contain;
   }
 
   nav {
@@ -57,23 +47,13 @@ header {
   header {
     padding: 10px;
 
-    a {
-      width: 25%;
-      .logo {
-        background-image: url(../../assets/logo/logomobile.png);
-        background-position: center;
-        background-size: cover;
-        height: 60px;
-        width: 80%;
-      }
-    }
-
-    .logo {
-      background-image: url(../../assets/logo/logomobile.png);
-      background-position: center;
-      background-size: cover;
-      height: 60px;
+    div {
+      height: 45px;
       width: 20%;
+      background-image: url(/assets/logo/logomobile.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     }
 
     nav {

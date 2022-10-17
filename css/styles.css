@@ -52,22 +52,13 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header a {
-  width: 50%;
-}
-header a .logo {
-  background-image: url(../../assets/logo/logodesktop.png);
+header div {
+  height: 45px;
+  width: 260px;
+  background-image: url(/assets/logo/logodesktop.png);
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 30px;
-  width: 36%;
-}
-header .logo {
-  background-image: url(../../assets/logo/logodesktop.png);
-  background-position: center;
-  background-size: cover;
-  height: 30px;
-  width: 18%;
+  background-size: contain;
 }
 header nav {
   width: 50%;
@@ -96,22 +87,13 @@ header .split br {
   header {
     padding: 10px;
   }
-  header a {
-    width: 25%;
-  }
-  header a .logo {
-    background-image: url(../../assets/logo/logomobile.png);
-    background-position: center;
-    background-size: cover;
-    height: 60px;
-    width: 80%;
-  }
-  header .logo {
-    background-image: url(../../assets/logo/logomobile.png);
-    background-position: center;
-    background-size: cover;
-    height: 60px;
+  header div {
+    height: 45px;
     width: 20%;
+    background-image: url(/assets/logo/logomobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   header nav {
     width: 75%;
