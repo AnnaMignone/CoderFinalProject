@@ -10,6 +10,7 @@ header {
   a {
     width: 50%;
     img {
+      content: url(../../assets/logo/logodesktop.png);
       width: 36% !important;
     }
   }
@@ -53,6 +54,7 @@ header {
     a {
       width: 25%;
       img {
+        content: url(../../assets/logo/logomobile.png);
         width: 80% !important;
       }
     }
