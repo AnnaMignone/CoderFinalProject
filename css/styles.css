@@ -59,7 +59,7 @@ header a img {
   width: 36% !important;
 }
 header img {
-  content: url(../../assets/logo/LogoDesktop.png);
+  content: url(../../assets/logo/logodesktop.png);
   width: 18%;
 }
 header nav {
@@ -96,7 +96,7 @@ header .split br {
     width: 80% !important;
   }
   header img {
-    content: url(../../assets/logo/LogoMobile\ .png);
+    content: url(../../assets/logo/logomobile.png);
     width: 20%;
   }
   header nav {
