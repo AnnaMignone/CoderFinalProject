@@ -55,7 +55,7 @@ header {
 header div {
   height: 45px;
   width: 260px;
-  background-image: url(/assets/logo/logodesktop.png);
+  background-image: url(../assets/logo/logodesktop.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -90,7 +90,7 @@ header .split br {
   header div {
     height: 45px;
     width: 20%;
-    background-image: url(/assets/logo/logomobile.png);
+    background-image: url(../assets/logo/logomobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
