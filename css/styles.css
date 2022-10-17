@@ -56,11 +56,11 @@ header a {
   width: 50%;
 }
 header a img {
-  content: url(../../assets/logo/logodesktop.png);
+  content: url(../../assets/logo/logodesktop.jpg);
   width: 36% !important;
 }
 header img {
-  content: url(../../assets/logo/logodesktop.png);
+  content: url(../../assets/logo/logodesktop.jpg);
   width: 18%;
 }
 header nav {
@@ -94,11 +94,11 @@ header .split br {
     width: 25%;
   }
   header a img {
-    content: url(../../assets/logo/logomobile.png);
+    content: url(../../assets/logo/logomobile.jpg);
     width: 80% !important;
   }
   header img {
-    content: url(../../assets/logo/logomobile.png);
+    content: url(../../assets/logo/logomobile.jpg);
     width: 20%;
   }
   header nav {
