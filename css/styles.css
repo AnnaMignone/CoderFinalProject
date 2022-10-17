@@ -55,12 +55,18 @@ header {
 header a {
   width: 50%;
 }
-header a img {
-  content: url(/assets/logo/logodesktop.png);
-  width: 36% !important;
+header a .logo {
+  background-image: url(../../assets/logo/logodesktop.png);
+  background-position: center;
+  background-size: cover;
+  height: 30px;
+  width: 36%;
 }
-header img {
-  content: url(/assets/logo/logodesktop.png);
+header .logo {
+  background-image: url(../../assets/logo/logodesktop.png);
+  background-position: center;
+  background-size: cover;
+  height: 30px;
   width: 18%;
 }
 header nav {
@@ -93,12 +99,18 @@ header .split br {
   header a {
     width: 25%;
   }
-  header a img {
-    content: url(/assets/logo/logomobile.png);
-    width: 80% !important;
+  header a .logo {
+    background-image: url(../../assets/logo/logomobile.png);
+    background-position: center;
+    background-size: cover;
+    height: 60px;
+    width: 80%;
   }
-  header img {
-    content: url(/assets/logo/logomobile.png);
+  header .logo {
+    background-image: url(../../assets/logo/logomobile.png);
+    background-position: center;
+    background-size: cover;
+    height: 60px;
     width: 20%;
   }
   header nav {

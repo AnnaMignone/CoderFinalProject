@@ -9,14 +9,20 @@ header {
 
   a {
     width: 50%;
-    img {
-      content: url(/assets/logo/logodesktop.png);
-      width: 36% !important;
+    .logo {
+      background-image: url(../../assets/logo/logodesktop.png);
+      background-position: center;
+      background-size: cover;
+      height: 30px;
+      width: 36%;
     }
   }
 
-  img {
-    content: url(/assets/logo/logodesktop.png);
+  .logo {
+    background-image: url(../../assets/logo/logodesktop.png);
+    background-position: center;
+    background-size: cover;
+    height: 30px;
     width: 18%;
   }
 
@@ -53,14 +59,20 @@ header {
 
     a {
       width: 25%;
-      img {
-        content: url(/assets/logo/logomobile.png);
-        width: 80% !important;
+      .logo {
+        background-image: url(../../assets/logo/logomobile.png);
+        background-position: center;
+        background-size: cover;
+        height: 60px;
+        width: 80%;
       }
     }
 
-    img {
-      content: url(/assets/logo/logomobile.png);
+    .logo {
+      background-image: url(../../assets/logo/logomobile.png);
+      background-position: center;
+      background-size: cover;
+      height: 60px;
       width: 20%;
     }
 
