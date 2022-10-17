@@ -10,13 +10,13 @@ header {
   a {
     width: 50%;
     img {
-      content: url(../../assets/logo/logodesktop.jpg);
+      content: url(/assets/logo/logodesktop.png);
       width: 36% !important;
     }
   }
 
   img {
-    content: url(../../assets/logo/logodesktop.jpg);
+    content: url(/assets/logo/logodesktop.png);
     width: 18%;
   }
 
@@ -54,13 +54,13 @@ header {
     a {
       width: 25%;
       img {
-        content: url(../../assets/logo/logomobile.jpg);
+        content: url(/assets/logo/logomobile.png);
         width: 80% !important;
       }
     }
 
     img {
-      content: url(../../assets/logo/logomobile.jpg);
+      content: url(/assets/logo/logomobile.png);
       width: 20%;
     }
 
