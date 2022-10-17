@@ -25,17 +25,24 @@ a:visited {
 .text {
   display: flex;
   justify-content: center;
-  margin: 60px 40px 60px 40px;
+  flex-direction: column;
+  margin: 35px 60px 60px 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 .text p {
-  width: 90%;
+  margin-top: 20px;
+  width: 100%;
   text-align: justify;
   font-size: 1rem;
   color: #0d131a;
 }
 
+@media (max-width: 600px) {
+  .text p {
+    text-align: center;
+  }
+}
 header {
   background-color: #fcfcfc;
   padding: 15px;
@@ -44,6 +51,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header a {
+  width: 50%;
+}
+header a img {
+  width: 36% !important;
+}
+header img {
+  content: url(../../assets/logo/LogoDesktop.png);
+  width: 18%;
 }
 header nav {
   width: 50%;
@@ -68,6 +85,32 @@ header .split br {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+  header a {
+    width: 25%;
+  }
+  header a img {
+    width: 80% !important;
+  }
+  header img {
+    content: url(../../assets/logo/LogoMobile\ .png);
+    width: 20%;
+  }
+  header nav {
+    width: 75%;
+  }
+  header ul {
+    justify-content: right;
+    font-size: small;
+  }
+  header ul li {
+    margin: 5px;
+    text-align: center;
+  }
+}
 footer {
   width: 100%;
   height: auto;
@@ -147,7 +190,7 @@ footer .social__icons {
   font-weight: 400;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
   accent-color: #96a13a;
 }
 
@@ -221,6 +264,14 @@ input[type="checkbox"] {
   color: #0d131a;
 }
 
+@media (max-width: 600px) {
+  .portada__info h1 {
+    font-size: 2.5rem;
+  }
+  .portada__info h2 {
+    font-size: 1.2rem;
+  }
+}
 .portada__home {
   background-image: url(../assets/sliderInicio/slide1.jpg);
   background-position: center;
@@ -232,6 +283,13 @@ input[type="checkbox"] {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .portada__home {
+    height: 55vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
 .portada__destinos {
   background-image: url(../assets/portadas/destinos.jpg);
   background-position: center;
@@ -291,6 +349,31 @@ input[type="checkbox"] {
   width: 35vw;
 }
 
+@media (max-width: 600px) {
+  .portada__destinos {
+    height: 55vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  .container {
+    margin: 50px 0px 25px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+  .container__card {
+    margin: 10px;
+    min-width: 250px;
+  }
+  .mapait {
+    margin: 0 50px;
+  }
+  .mapait__img {
+    margin: 0px;
+    width: 70vw;
+  }
+}
 .portada__quehacer {
   background-image: url(../assets/portadas/quehacer.jpg);
   background-position: center;
@@ -313,7 +396,7 @@ input[type="checkbox"] {
   overflow: hidden;
   margin: 20px;
   width: 25%;
-  height: 50vh;
+  height: 55vh;
   padding-bottom: 5px;
 }
 .box__card__img {
@@ -332,16 +415,39 @@ input[type="checkbox"] {
 }
 .box__card__info__titulo {
   margin-bottom: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #0d131a;
 }
 .box__card__info__texto {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #0d131a;
 }
 
+@media (max-width: 600px) {
+  .portada__quehacer {
+    height: 55vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  .box {
+    margin: 50px 0px 25px 0px;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  .box__card {
+    margin: 10px;
+    min-width: 75vw;
+    padding-bottom: 10px;
+    height: 35vh;
+  }
+}
 .portada__blog {
   background-image: url(../assets/portadas/blog.jpg);
   background-position: center;
@@ -379,7 +485,7 @@ input[type="checkbox"] {
 }
 .cont__card__info__titulo {
   margin-bottom: 5px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #0d131a;
@@ -392,6 +498,34 @@ input[type="checkbox"] {
   color: #0d131a;
 }
 
+@media (max-width: 600px) {
+  .portada__blog {
+    height: 55vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  .cont {
+    margin: 0 50px;
+    flex-direction: column;
+    align-content: center;
+  }
+  .cont__card {
+    border-radius: 10px;
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 35vh;
+  }
+  .cont__card__info {
+    padding: 5px 10px 10px 2px;
+  }
+  .cont__card__info__titulo {
+    font-size: 1.3rem;
+  }
+  .cont__card__info__date {
+    font-size: 0.8rem;
+  }
+}
 .portada__suscribite {
   background-image: url(../assets/portadas/suscribite.jpg);
   background-position: center;
@@ -401,6 +535,14 @@ input[type="checkbox"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  .portada__suscribite {
+    height: 55vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -18,3 +18,13 @@
     color: #0d131a;
   }
 }
+@media (max-width: 600px) {
+  .portada__info {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}

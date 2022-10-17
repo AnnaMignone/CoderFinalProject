@@ -63,3 +63,33 @@
     width: 35vw;
   }
 }
+
+@media (max-width: 600px) {
+  .portada__destinos {
+    height: 55vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .container {
+    margin: 50px 0px 25px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+
+    &__card {
+      margin: 10px;
+      min-width: 250px;
+    }
+  }
+
+  .mapait {
+    margin: 0 50px;
+
+    &__img {
+      margin: 0px;
+      width: 70vw;
+    }
+  }
+}

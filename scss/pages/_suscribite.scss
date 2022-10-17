@@ -9,3 +9,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  .portada__suscribite {
+    height: 55vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}

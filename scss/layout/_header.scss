@@ -7,6 +7,18 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  a {
+    width: 50%;
+    img {
+      width: 36% !important;
+    }
+  }
+
+  img {
+    content: url(../../assets/logo/LogoDesktop.png);
+    width: 18%;
+  }
+
   nav {
     width: 50%;
   }
@@ -32,4 +44,36 @@ header {
   background-color: #96a13a;
   height: 10px;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+
+    a {
+      width: 25%;
+      img {
+        width: 80% !important;
+      }
+    }
+
+    img {
+      content: url(../../assets/logo/LogoMobile\ .png);
+      width: 20%;
+    }
+
+    nav {
+      width: 75%;
+    }
+
+    ul {
+      justify-content: right;
+      font-size: small;
+
+      li {
+        margin: 5px;
+        text-align: center;
+      }
+    }
+  }
 }

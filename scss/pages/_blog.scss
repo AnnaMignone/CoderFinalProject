@@ -37,7 +37,7 @@
 
       &__titulo {
         margin-bottom: 5px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         color: #0d131a;
@@ -49,6 +49,40 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         color: #0d131a;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .portada__blog {
+    height: 55vh;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .cont {
+    margin: 0 50px;
+    flex-direction: column;
+    align-content: center;
+
+    &__card {
+      border-radius: 10px;
+      margin: 0px;
+      width: 100%;
+      margin-bottom: 30px;
+      height: 35vh;
+
+      &__info {
+        padding: 5px 10px 10px 2px;
+
+        &__titulo {
+          font-size: 1.3rem;
+        }
+
+        &__date {
+          font-size: 0.8rem;
+        }
       }
     }
   }
