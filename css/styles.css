@@ -67,14 +67,14 @@ header .logo {
 header nav {
   width: 50%;
 }
-header ul {
+header nav ul {
   display: flex;
   justify-content: space-around;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #0d131a;
 }
-header ul li:hover {
+header nav ul li:hover {
   font-weight: 600;
 }
 header .split br {

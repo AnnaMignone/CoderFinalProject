@@ -23,17 +23,17 @@ header {
 
   nav {
     width: 50%;
-  }
 
-  ul {
-    display: flex;
-    justify-content: space-around;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    color: #0d131a;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      color: #0d131a;
 
-    li:hover {
-      font-weight: 600;
+      li:hover {
+        font-weight: 600;
+      }
     }
   }
 
