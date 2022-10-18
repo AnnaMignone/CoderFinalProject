@@ -52,9 +52,13 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header div {
+header a {
+  height: auto;
+  width: auto;
+}
+header .logo {
   height: 45px;
-  width: 260px;
+  width: 25vw;
   background-image: url(../assets/logo/logodesktop.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -87,13 +91,10 @@ header .split br {
   header {
     padding: 10px;
   }
-  header div {
+  header .logo {
     height: 45px;
-    width: 20%;
+    width: 20vw;
     background-image: url(../assets/logo/logomobile.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
   header nav {
     width: 75%;
