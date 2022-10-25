@@ -8,6 +8,10 @@ ul {
   list-style: none;
 }
 
+footer a {
+  color: #fcfcfc !important;
+}
+
 a {
   text-decoration: none;
   color: #0d131a;
@@ -15,11 +19,6 @@ a {
 a:visited {
   text-decoration: none;
   color: #0d131a;
-}
-
-.selected {
-  color: #819000 !important;
-  font-weight: bold;
 }
 
 .text {
@@ -45,7 +44,7 @@ a:visited {
 }
 header {
   background-color: #fcfcfc;
-  padding: 15px;
+  padding: 8px;
   position: sticky;
   top: 0;
   display: flex;
@@ -76,6 +75,7 @@ header nav ul {
 }
 header nav ul li:hover {
   font-weight: 600;
+  font-size: 0.97rem;
 }
 header .split br {
   background-color: transparent;
@@ -85,6 +85,12 @@ header .split br {
   background-color: #96a13a;
   height: 10px;
   width: 100%;
+}
+
+.selected {
+  color: #819000 !important;
+  font-weight: bold;
+  font-size: 0.97rem;
 }
 
 @media (max-width: 600px) {
@@ -150,12 +156,17 @@ footer .social__text {
   text-align: left;
 }
 footer .social__icons {
-  margin: 5px;
+  width: 80px;
+  margin: 20px 5px 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 80px;
 }
 .form__tittle {
@@ -170,14 +181,15 @@ footer .social__icons {
   border: 0.5px solid #0d131a;
   border-radius: 3px;
   border-width: 0.5px;
-  width: 60vw;
+  width: 70vw;
   height: 2rem;
-  padding: 1px 10px 1px 10px;
+  padding: 1px 10px;
+  margin: 10px 0px;
   display: flex;
   justify-content: space-around;
 }
 .form__check {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-right: 5px;
 }
 .form__check__text {
@@ -311,6 +323,11 @@ input[type=checkbox] {
   width: 90%;
   box-shadow: 0px 3px 5px rgba(13, 19, 26, 0.3098039216);
 }
+.container__card:hover {
+  transition-property: border;
+  border: 1.5px solid #96a13a;
+  margin: 14px;
+}
 .container__card__img {
   width: 100%;
   height: 200px;
@@ -369,6 +386,19 @@ input[type=checkbox] {
   .mapait__img {
     margin: 0px;
     width: 70vw;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  .container {
+    margin: 50px 10px 25px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+  .container__card {
+    margin: 10px;
+    min-width: 250px;
   }
 }
 .portada__quehacer {
@@ -443,6 +473,24 @@ input[type=checkbox] {
     min-width: 75vw;
     padding-bottom: 10px;
     height: 35vh;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  .box {
+    margin: 50px 0px 25px 0px;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  .box__card {
+    margin: 10px;
+    min-width: 40vw;
+    padding-bottom: 10px;
+    height: 30vh;
   }
 }
 .portada__blog {
@@ -521,6 +569,21 @@ input[type=checkbox] {
   }
   .cont__card__info__date {
     font-size: 0.8rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  .cont {
+    margin: 0 50px;
+    flex-direction: column;
+    align-content: center;
+  }
+  .cont__card {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 75%;
+    height: 40vh;
   }
 }
 .portada__suscribite {

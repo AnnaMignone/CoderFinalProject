@@ -1,6 +1,6 @@
 header {
-  background-color: #fcfcfc;
-  padding: 15px;
+  background-color: $c-white;
+  padding: 8px;
   position: sticky;
   top: 0;
   display: flex;
@@ -29,10 +29,11 @@ header {
       justify-content: space-around;
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
-      color: #0d131a;
+      color: $c-black;
 
       li:hover {
         font-weight: 600;
+        font-size: 0.97rem;
       }
     }
   }
@@ -43,9 +44,15 @@ header {
 }
 
 .split {
-  background-color: #96a13a;
+  background-color: $c-lightgreen;
   height: 10px;
   width: 100%;
+}
+
+.selected {
+  color: $c-green !important;
+  font-weight: bold;
+  font-size: 0.97rem;
 }
 
 @media (max-width: 600px) {

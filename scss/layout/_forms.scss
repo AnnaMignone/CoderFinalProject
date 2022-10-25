@@ -1,6 +1,8 @@
 .form {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin: 80px;
 
   &__tittle {
@@ -9,26 +11,27 @@
     font-weight: 800;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    color: #819000;
+    color: $c-green;
   }
 
   &__box {
-    border: 0.5px solid #0d131a;
+    border: 0.5px solid $c-black;
     border-radius: 3px;
     border-width: 0.5px;
-    width: 60vw;
+    width: 70vw;
     height: 2rem;
-    padding: 1px 10px 1px 10px;
+    padding: 1px 10px;
+    margin: 10px 0px;
     display: flex;
     justify-content: space-around;
   }
 
   &__check {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-right: 5px;
 
     &__text {
-      color: #0d131a;
+      color: $c-black;
       font-size: 1rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
@@ -37,5 +40,5 @@
 }
 
 input[type="checkbox"] {
-  accent-color: #96a13a;
+  accent-color: $c-lightgreen;
 }

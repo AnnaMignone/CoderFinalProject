@@ -8,14 +8,14 @@
     font-size: 3rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    color: #0d131a;
+    color: $c-black;
   }
 
   h2 {
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    color: #0d131a;
+    color: $c-black;
   }
 }
 @media (max-width: 600px) {

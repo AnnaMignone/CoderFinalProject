@@ -1,7 +1,7 @@
 .button {
-  border: 0.5px solid #819000;
-  background-color: #819000;
-  color: #fcfcfc;
+  border: 0.5px solid $c-green;
+  background-color: $c-green;
+  color: $c-white;
   border-radius: 10px;
   padding: 10px 15px;
   margin: 20px auto 60px auto;
@@ -11,11 +11,11 @@
   box-shadow: 0px 3px 5px #0d131a5d;
 
   a {
-    color: #fcfcfc;
+    color: $c-white;
   }
 
   &:hover {
-    background-color: #96a13a;
+    background-color: $c-lightgreen;
   }
 
   &:active {
