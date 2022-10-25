@@ -114,6 +114,9 @@ header .split br {
     margin: 5px;
     text-align: center;
   }
+  .selected {
+    font-size: 0.88rem;
+  }
 }
 footer {
   width: 100%;
